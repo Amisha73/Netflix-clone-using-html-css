@@ -337,6 +337,7 @@ input[type="radio"]{
     }
     .card1 .box1, .card3 .box3, .card4 .box4{
         margin-right: 20%;
+        align-items: center;
     }
     .cards h1{
         font-size: 32px;
