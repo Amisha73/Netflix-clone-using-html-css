@@ -495,10 +495,3 @@ input[type="radio"]{
         flex-wrap: wrap ;
     }
 }
-
-@media (min-width: 1025px) and (max-width: 1310px) {
-    body{
-        overflow-x: hidden;
-    }
-    
-}
