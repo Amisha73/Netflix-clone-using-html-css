@@ -160,6 +160,7 @@ nav {
     justify-content: center;
     width: 100%;
     margin-bottom: 3%;
+    gap: 5%;
 }
 .box2{
     width: 40%;
@@ -194,6 +195,7 @@ nav {
     display: flex;
     align-items: center;
     margin-bottom: 3%;
+    gap: 5%;
 }
 .box4{
     padding-left: 80px;
@@ -333,8 +335,8 @@ input[type="radio"]{
         padding: 8px;
         width: 100px;
     }
-    .card1, .card3, .card4{
-        align-items: center;
+    .card1 .box1, .card3 .box3, .card4 .box4{
+        margin-right: 20%;
     }
     .cards h1{
         font-size: 32px;
@@ -356,7 +358,7 @@ input[type="radio"]{
     .card1 video{
         position: absolute;
         width: 300px;
-        top: 35%;
+        top: 45%;
     }
     .card2{
         flex-direction: column-reverse;
@@ -383,7 +385,7 @@ input[type="radio"]{
     .card3 video{
         position: absolute;
         width: 216px;
-        top: 26%;
+        top: 35%;
     }
     .card4{
         flex-direction: column-reverse;
