@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.7) url("https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/ca15fd28-b624-4852-8bfe-9cdd5c88475d/IN-en-20240520-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 10%;
+}
+
+.side-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.select {
+    font-size: 16px;
+    padding: 10px 16px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select1 {
+    color: black;
+}
+
+.btn {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #c70404;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-top: -100px;
+    font-weight: 700;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.email {
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.email input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 0 24px;
+    font-size: 16px;
+}
+.email button{
+    background-color: #db0001 ;
+    color: white;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.email button:hover{
+    background-color: #c70404;
+}
+.cards h1{
+    font-size: 3rem;
+    padding:  1rem;
+    padding-left: 0;
+}
+.cards p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.card1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    gap: 5%;
+}
+.box1{
+    padding-left: 80px;
+}
+.card1 video{
+    position: relative;
+    width: 100%;
+    height: 54%;
+    grid-column: 2/2;
+    grid-row:1/2;
+    z-index: -1;
+}
+.card1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    width: 600px;
+    height: auto;
+}
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.box2{
+    width: 40%;
+}
+.card3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 25px 45px 50px;
+    gap: 5%;
+}
+.box3{
+    padding-left: 80px;
+}
+.card3 video{
+    position: relative;
+    width: 109%;
+    height: 47%;
+    top: -20%;
+    grid-column: 2/2;
+    grid-row:1/2;
+    z-index: -1;
+}
+.card3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    height: auto;
+    width: auto;
+}
+.card4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.box4{
+    padding-left: 80px;
+}
+.card4 .img{
+    padding-left: 5%;
+    
+}
+.line{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(56, 55, 55);
+}
+
+/* faq section */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 800;
+    margin-top: 5%;
+    font-size: 48px;
+}
+.question{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 950px;
+}
+.question li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.question li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position:relative;
+}
+label::after{
+    content: "+";;
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition:  transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.question .subheading{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.5s, padding 0.5s;
+}
+.question .subheading p{
+    margin-bottom: 10px;
+}
+.question input[type = "radio"]:checked + label + .subheading{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.question input[type= "radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq p{
+    font-size: 16px;
+}
+.faq .email{
+    max-width: 600px;
+    margin: 20px auto 60px;;
+}
+
+/* footer */
+.footer {
+    padding: 10px 10px;
+}
+.footer p {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-cols {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.footer-cols ul {
+    list-style: none;
+}
+.footer-cols ul li {
+    margin-bottom: 30px;
+}
+.footer-cols ul li a{
+    color: white;
+    font-size: 16px;
+}
+
+@media (min-width:300px) and (max-width:729px) {
+    body{
+        overflow: hidden;
+    }
+    .logo{
+        width: 100px;
+    }
+    .select{
+        display:none;
+    }
+    .btn{
+        font-size: 8px;
+    }
+    .content{
+        margin-top: 16%;
+    }
+    .content h1{
+        font-size:  24px;
+    }
+    .content h2{
+        font-size: 18px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .email input{
+        font-size: 12px;
+    }
+    .email button{
+        font-size: 12px;
+        padding: 8px;
+        width: 100px;
+    }
+    .card1, .card3, .card4{
+        align-items: center;
+    }
+    .cards h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    .cards p{
+        font-size: 18px;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 video{
+        position: absolute;
+        width: 450px;
+        top: 30%;
+    }
+    .card2{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .box2{
+        width: 60%;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card3 video{
+        position: absolute;
+        width: 400px;
+        top: 20%;
+    }
+    .card4{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .faq h2{
+        font-size: 26px;
+    }
+    .faq p{
+        font-size: 14px;
+    }
+    .footer-cols {
+        flex-wrap: wrap ;
+    }
+    .footer-cols ul li {
+        margin-bottom: 18px;
+    }
+    .footer-cols ul {
+        margin-bottom: 20px;
+    }
+
+}
+@media ( min-width : 730px) and (max-width: 1024px ) {
+    body{
+        overflow: hidden;
+    }
+    .logo{
+        width: 110px;
+    }
+    .select{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+    .content h2 {
+        font-size: 18px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .email input{
+        font-size: 12px;
+    }
+    .email button{
+        font:12px ;
+        padding:10px;
+    }
+    .cards h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    .cards p{
+        font-size: 18px;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 video{
+        position: absolute;
+        width: 450px;
+        top: 30%;
+    }
+    .card2{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .box2{
+        width: 80%;
+    }
+    .box2 img{
+        width: 400px;
+    }
+    .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card3 video{
+        position: absolute;
+        width: 400px;
+        top: 20%;
+    }
+    .card4{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .box4{
+        width: 70%;
+    }
+    .footer-cols {
+        flex-wrap: wrap ;
+    }
+}
