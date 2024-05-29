@@ -174,7 +174,7 @@ nav {
     gap: 5%;
 }
 .box3{
-    padding-left: 80px;
+    padding-left: 60px;
 }
 .card3 video{
     position: relative;
@@ -198,7 +198,10 @@ nav {
     gap: 5%;
 }
 .box4{
-    padding-left: 80px;
+    padding-left: 60px;
+}
+.box4 p{
+    width: 80%;
 }
 .card4 .img{
     padding-left: 5%;
