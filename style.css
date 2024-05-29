@@ -19,7 +19,7 @@ body {
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    padding: 2vw;
+    padding: 1vw 4vw;
     position: relative;
 }
 
@@ -142,7 +142,7 @@ nav {
 }
 .card1 video{
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 54%;
     grid-column: 2/2;
     grid-row:1/2;
@@ -177,7 +177,7 @@ nav {
 }
 .card3 video{
     position: relative;
-    width: 109%;
+    width: 82%;
     height: 47%;
     top: -20%;
     grid-column: 2/2;
@@ -349,15 +349,23 @@ input[type="radio"]{
         display: flex;
         flex-direction: column;
     }
+    .card1 img{
+        width: 330px;
+        height: 248px;
+    }
     .card1 video{
         position: absolute;
-        width: 450px;
-        top: 30%;
+        width: 300px;
+        top: 35%;
     }
     .card2{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+    .card2 img{
+        width: 330px;
+        height: 248px;
     }
     .box2{
         width: 60%;
@@ -368,15 +376,23 @@ input[type="radio"]{
         align-items: center;
         justify-content: center;
     }
+    .card3 img{
+        width: 330px;
+        height: 248px;
+    }
     .card3 video{
         position: absolute;
-        width: 400px;
-        top: 20%;
+        width: 216px;
+        top: 26%;
     }
     .card4{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+    .card4 img{
+        width: 330px;
+        height: 248px;
     }
     .faq h2{
         font-size: 26px;
@@ -472,4 +488,11 @@ input[type="radio"]{
     .footer-cols {
         flex-wrap: wrap ;
     }
+}
+
+@media (min-width: 1025px) and (max-width: 1310px) {
+    body{
+        overflow-x: hidden;
+    }
+    
 }
