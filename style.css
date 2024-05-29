@@ -6,6 +6,8 @@
 }
 
 body {
+    height: 100%;
+    width: 100%;
     background-color: black;
     color: white;
 }
@@ -17,7 +19,7 @@ body {
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
+    padding: 2vw;
     position: relative;
 }
 
@@ -25,7 +27,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 2vw 0;
 }
 
 .logo {
@@ -93,6 +95,7 @@ nav {
     background: white;
     border-radius: 4px;
     display: flex;
+    gap: 2px;
     align-items: center;
     margin-top: 20px;
 }
@@ -301,9 +304,6 @@ input[type="radio"]{
 }
 
 @media (min-width:300px) and (max-width:729px) {
-    body{
-        overflow: hidden;
-    }
     .logo{
         width: 100px;
     }
@@ -396,9 +396,6 @@ input[type="radio"]{
 
 }
 @media ( min-width : 730px) and (max-width: 1024px ) {
-    body{
-        overflow: hidden;
-    }
     .logo{
         width: 110px;
     }
