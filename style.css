@@ -19,7 +19,7 @@ body {
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    padding: 1vw 4vw;
+    padding: 10px 8%;
     position: relative;
 }
 
@@ -27,7 +27,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 0;
+    padding: 20px 0;
 }
 
 .logo {
@@ -238,7 +238,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     background: #303030;
     margin-bottom: 2px;
@@ -247,7 +247,7 @@ nav {
 }
 label::after{
     content: "+";;
-    font-size: 34px;
+    font-size: 30px;
     position: absolute;
     right: 20px;
     transition:  transform 0.5s;
@@ -308,7 +308,7 @@ input[type="radio"]{
     font-size: 16px;
 }
 
-@media (min-width:300px) and (max-width:729px) {
+@media (min-width:200px) and (max-width:729px) {
     .logo{
         width: 100px;
     }
@@ -338,12 +338,8 @@ input[type="radio"]{
         padding: 8px;
         width: 100px;
     }
-    .card1 .box1, .card3 .box3, .card4 .box4{
-        margin-right: 20%;
-        align-items: center;
-    }
     .cards h1{
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
     }
     .cards p{
@@ -362,7 +358,8 @@ input[type="radio"]{
     .card1 video{
         position: absolute;
         width: 300px;
-        top: 45%;
+        top: 39%;
+        overflow: hidden;
     }
     .card2{
         flex-direction: column-reverse;
@@ -389,7 +386,8 @@ input[type="radio"]{
     .card3 video{
         position: absolute;
         width: 216px;
-        top: 35%;
+        top: 34%;
+        overflow: hidden;
     }
     .card4{
         flex-direction: column-reverse;
@@ -402,6 +400,10 @@ input[type="radio"]{
     }
     .faq h2{
         font-size: 26px;
+        font-weight: normal;
+    }
+    .question li label{
+        font-size: 16px;
     }
     .faq p{
         font-size: 14px;
@@ -410,12 +412,13 @@ input[type="radio"]{
         flex-wrap: wrap ;
     }
     .footer-cols ul li {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
+        margin-left: 40px;
+        margin-left: 20%;
     }
-    .footer-cols ul {
-        margin-bottom: 20px;
+    .footer .f4, .f3{
+        display: none;
     }
-
 }
 @media ( min-width : 730px) and (max-width: 1024px ) {
     .logo{
