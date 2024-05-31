@@ -4,14 +4,12 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-
 body {
     height: 100%;
     width: 100%;
     background-color: black;
     color: white;
 }
-
 .header {
     width: 100%;
     height: 85vh;
@@ -22,24 +20,20 @@ body {
     padding: 10px 8%;
     position: relative;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
 }
-
 .logo {
     width: 10%;
 }
-
 .side-bar {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .select {
     font-size: 16px;
     padding: 10px 16px;
@@ -48,11 +42,9 @@ nav {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .select1 {
     color: black;
 }
-
 .btn {
     color: white;
     background-color: red;
@@ -63,7 +55,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
     background-color: #c70404;
 }
 .content {
@@ -74,58 +66,57 @@ nav {
     text-align: center;
     margin-top: 5%;
 }
-
 .content h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin-top: -100px;
     font-weight: 700;
 }
-
 .content h2 {
     font-size: 24px;
     margin-top: 20px;
     font-weight: 400;
 }
-
 .content p {
     margin-top: 20px;
     font-size: 20px;
 }
 .email {
-    background: white;
+    background: transparent;
     border-radius: 4px;
     display: flex;
-    gap: 2px;
+    gap: 20px;
     align-items: center;
     margin-top: 20px;
 }
-.email input{
+.email input {
+    background: transparent;
+
     flex: 1;
-    border: 0;
+    border: 2px solid rgb(79, 79, 79);
     outline: 0;
     margin-left: 20px;
-    padding: 0 24px;
+    padding: 13px 24px;
     font-size: 16px;
 }
-.email button{
-    background-color: #db0001 ;
+.email button {
+    background-color: #db0001;
     color: white;
     border: 0;
     outline: 0;
     font-size: 16px;
     cursor: pointer;
-    padding: 15px 30px;
+    padding:15px 30px;
 }
-.email button:hover{
+.email button:hover {
     background-color: #c70404;
 }
 .cards h1{
-    font-size: 3rem;
-    padding:  1rem;
-    padding-left: 0;
+    font-size: 2.5vw;
+    padding: 0.5vw 0;
+    
 }
 .cards p{
-    font-size: 1.6rem;
+    font-size: 1.5vw;
     line-height: 2rem;
 }
 .card1{
@@ -134,11 +125,11 @@ nav {
     grid-template-columns: 50% 50%;
     text-align: left;
     align-items: center;
-    padding: 25px 45px 50px;
-    gap: 5%;
+    padding: 4vw;
+    gap: 4vw;
 }
 .box1{
-    padding-left: 80px;
+    padding-left: 4.5vw;
 }
 .card1 video{
     position: relative;
@@ -170,11 +161,11 @@ nav {
     display: inline-grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    padding: 25px 45px 50px;
-    gap: 5%;
+    padding: 4vw;
+    gap: 4.5vw;
 }
 .box3{
-    padding-left: 60px;
+    padding-left:4vw;
 }
 .card3 video{
     position: relative;
@@ -195,46 +186,38 @@ nav {
     display: flex;
     align-items: center;
     margin-bottom: 3%;
-    gap: 5%;
+    gap: 4.5vw;
 }
-.box4{
-    padding-left: 60px;
-}
-.box4 p{
-    width: 80%;
-}
-.card4 .img{
-    padding-left: 5%;
-    
+.card4 {
+    padding-left: 5vw;
 }
 .line{
     width: 100%;
     height: 10px;
     background-color: rgb(56, 55, 55);
 }
-
 /* faq section */
-.faq{
+.faq {
     padding: 10px 12%;
     text-align: center;
     font-size: 18px;
 }
-.faq h2{
+.faq h2 {
     font-weight: 800;
     margin-top: 5%;
     font-size: 48px;
 }
-.question{
+.question {
     margin: 40px auto;
     width: 100%;
     max-width: 950px;
 }
-.question li{
+.question li {
     list-style: none;
     width: 100%;
     padding: 5px;
 }
-.question li label{
+.question li label {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -243,44 +226,45 @@ nav {
     background: #303030;
     margin-bottom: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
 }
-label::after{
-    content: "+";;
+label::after {
+    content: "+";
+    ;
     font-size: 30px;
     position: absolute;
     right: 20px;
-    transition:  transform 0.5s;
+    transition: transform 0.5s;
 }
-input[type="radio"]{
+input[type="radio"] {
     display: none;
 }
-.question .subheading{
+.question .subheading {
     background: #303030;
     text-align: left;
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition:  max-height 0.5s, padding 0.5s;
+    transition: max-height 0.5s, padding 0.5s;
 }
-.question .subheading p{
+.question .subheading p {
     margin-bottom: 10px;
 }
-.question input[type = "radio"]:checked + label + .subheading{
+.question input[type="radio"]:checked+label+.subheading {
     max-height: 600px;
     padding: 30px 20px;
 }
-.question input[type= "radio"]:checked + label::after{
+.question input[type="radio"]:checked+label::after {
     transform: rotate(135deg);
 }
-.faq p{
+.faq p {
     font-size: 16px;
 }
-.faq .email{
+.faq .email {
     max-width: 600px;
-    margin: 20px auto 60px;;
+    margin: 20px auto 60px;
+    gap: 20px;
 }
-
 /* footer */
 .footer {
     padding: 10px 10px;
@@ -303,131 +287,151 @@ input[type="radio"]{
 .footer-cols ul li {
     margin-bottom: 30px;
 }
-.footer-cols ul li a{
+.footer-cols ul li a {
     color: white;
     font-size: 16px;
 }
+.footer-cols1{
+    display: none;
+}
 
-@media (min-width:200px) and (max-width:729px) {
-    .logo{
+@media (max-width:729px) {
+    .logo {
         width: 100px;
     }
-    .select{
-        display:none;
+    .select {
+        font-size: 2vw;
+        padding: 8px 12px;
     }
-    .btn{
+    .btn {
         font-size: 8px;
     }
-    .content{
+    .content {
         margin-top: 16%;
     }
-    .content h1{
-        font-size:  24px;
+    .content h1 {
+        font-size: 24px;
     }
-    .content h2{
+    .content h2 {
         font-size: 18px;
     }
-    .content p{
+    .content p {
         font-size: 14px;
     }
-    .email input{
+    .email{
+        flex-direction: column;
+    }
+    .email input {
         font-size: 12px;
     }
-    .email button{
+    .email button {
         font-size: 12px;
         padding: 8px;
         width: 100px;
     }
-    .cards h1{
-        font-size: 30px;
+    .cards .box {
         text-align: center;
+        padding-left: 1.9vw;
     }
-    .cards p{
-        font-size: 18px;
+    .cards h1 {
+        font-size: 5vw;
+    }
+    .cards p {
+        font-size: 3vw;
         line-height: 1.5rem;
-        text-align: center;
     }
-    .card1{
+    .card1 {
         display: flex;
         flex-direction: column;
     }
-    .card1 img{
+    .card1 img {
         width: 330px;
         height: 248px;
     }
-    .card1 video{
+    .card1 video {
         position: absolute;
         width: 300px;
         top: 39%;
         overflow: hidden;
     }
-    .card2{
+    .card2 {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    .card2 img{
+    .card2 img {
         width: 330px;
         height: 248px;
     }
-    .box2{
+    .box2,.box1, .box3, .box4 {
         width: 60%;
     }
-    .card3{
+    .card3 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .card3 img{
+    .card3 img {
         width: 330px;
         height: 248px;
     }
-    .card3 video{
+    .card3 video {
         position: absolute;
         width: 216px;
-        top: 34%;
-        overflow: hidden;
+        top: 28%;
     }
-    .card4{
+    .card4 {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    .card4 img{
+    .card4 img {
         width: 330px;
         height: 248px;
     }
-    .faq h2{
+    .faq h2 {
         font-size: 26px;
         font-weight: normal;
     }
-    .question li label{
+    .question li label {
         font-size: 16px;
     }
-    .faq p{
+    .faq p {
         font-size: 14px;
     }
     .footer-cols {
-        flex-wrap: wrap ;
-    }
-    .footer-cols ul li {
-        margin-bottom: 16px;
-        margin-left: 40px;
-        margin-left: 20%;
-    }
-    .footer .f4, .f3{
         display: none;
     }
+    .footer p{
+        font-size: 16px;
+    }
+    .footer-cols1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .footer-cols1 ul {
+        list-style: none;
+    }
+    .footer-cols1 ul li {
+        margin-bottom: 20px;
+    }
+    .footer-cols1 ul li a {
+        color: white;
+        font-size: 16px;
+    }
 }
-@media ( min-width : 730px) and (max-width: 1024px ) {
-    .logo{
+
+@media (min-width : 730px) and (max-width: 1024px) {
+    .logo {
         width: 110px;
     }
-    .select{
+    .select {
         font-size: 12px;
     }
-    .btn{
+    .btn {
         font-size: 12px;
     }
     .content h1 {
@@ -436,65 +440,70 @@ input[type="radio"]{
     .content h2 {
         font-size: 18px;
     }
-    .content p{
+    .content p {
         font-size: 15px;
     }
-    .email input{
+    .email input {
         font-size: 12px;
     }
-    .email button{
-        font:12px ;
-        padding:10px;
+    .email button {
+        font: 12px;
+        padding: 10px;
     }
-    .cards h1{
-        font-size: 32px;
+    .cards h1 {
+        font-size: 4.5vw;
         text-align: center;
     }
-    .cards p{
-        font-size: 18px;
+    .cards p {
+        font-size: 2.3vw;
         line-height: 2rem;
         text-align: center;
     }
-    .card1{
+    .cards .box {
+        text-align: center;
+        padding-left: 1.5vw;
+        margin-top: 4vw;
+    }
+    .card1 {
         display: flex;
         flex-direction: column;
     }
-    .card1 video{
+    .card1 video {
         position: absolute;
         width: 450px;
-        top: 30%;
+        top: 35%;
     }
-    .card2{
+    .card2 {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    .box2{
+    .box2 p, .box1 p, .box3 p, .box4 p {
         width: 80%;
     }
-    .box2 img{
+    .box2 img {
         width: 400px;
     }
-    .card3{
+    .card3 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .card3 video{
+    .card3 video {
         position: absolute;
         width: 400px;
-        top: 20%;
+        top: 30%;
     }
-    .card4{
+    .card4 {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    .box4{
-        width: 70%;
+    .box4 p {
+        margin-left: 2vw;
     }
     .footer-cols {
-        flex-wrap: wrap ;
+        flex-wrap: wrap;
     }
 }
