@@ -340,6 +340,9 @@ input[type="radio"] {
         font-size: 3vw;
         line-height: 1.5rem;
     }
+    .cards .box2, .box4{
+        margin-top: 30px;
+    }
     .card1 {
         display: flex;
         flex-direction: column;
@@ -459,10 +462,12 @@ input[type="radio"] {
         line-height: 2rem;
         text-align: center;
     }
-    .cards .box {
+    .cards .box2, .box4{
+        margin-top: 30px;
+    }
+    .cards .box p{
         text-align: center;
-        padding-left: 1.5vw;
-        margin-top: 4vw;
+        padding-left: 70px;
     }
     .card1 {
         display: flex;
@@ -478,7 +483,7 @@ input[type="radio"] {
         align-items: center;
         justify-content: center;
     }
-    .box2 p, .box1 p, .box3 p, .box4 p {
+    .box1 p, .box3 p, .box4 p {
         width: 80%;
     }
     .box2 img {
